@@ -1,1 +1,1 @@
-# Igor_Lopatinskiy
+# Лопатинский Игорь
