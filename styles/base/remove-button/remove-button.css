@@ -1,0 +1,33 @@
+.remove-button {
+  display: inline-block;
+  position: relative;
+  }
+
+  .remove-button_target {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    outline: none;
+    background: none;
+
+    cursor: pointer;
+    }
+
+  .remove-button_icon {
+    background: url(../../../images/close.png);
+    width: 18px;
+    height: 18px;
+    margin-top: 8px;
+    }
+
+    @media (-webkit-min-device-pixel-ratio: 1.5),
+           (min-resolution: 120dpi),
+           (min-resolution: 1.5dppx) {
+      .remove-button_icon {
+        background: url(../../../images/close@2x.png) no-repeat 0 0;
+        background-size: 100%;
+        }
+      }

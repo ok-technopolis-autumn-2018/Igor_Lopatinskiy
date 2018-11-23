@@ -1,0 +1,37 @@
+.todos-toolbar {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  padding: .7em;
+  font-size: .7em;
+  color: #888888;
+  align-items: center;
+  }
+
+  .todos-toolbar_unready-counter {
+    grid-column: auto;
+    justify-self: left;
+    font-size: .8rem;
+    }
+
+  .todos-toolbar_filters {
+    grid-column: auto;
+    justify-self: center;
+    font-size: .8rem;
+    line-height: .8rem;
+    }
+
+  .todos-toolbar_clear-completed {
+    grid-column: auto;
+    justify-self: right;
+    font-size: .8rem;
+
+    border: none;
+    outline: none;
+    background: none;
+    color: #888888;
+
+    padding: 0;
+    margin: 0;
+
+    cursor: pointer;
+    }

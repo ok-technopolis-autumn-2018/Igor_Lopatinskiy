@@ -1,0 +1,57 @@
+.todos-list {
+  min-height: 345px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+  .todos-list_item {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 16px;
+    }
+
+    .todos-list_item:after {
+      content: '';
+      clear: both;
+      display: table;
+      }
+
+    .todos-list_item_ready-marker {
+      float: left;
+      margin-right: 16px;
+      }
+
+    .todos-list_item_remove {
+      float: right;
+      margin-left: 16px;
+      visibility: hidden;
+      }
+
+    .todos-list_item:hover {
+      background-color: #fafafa;
+      }
+
+    .todos-list_item:hover .todos-list_item_remove {
+      visibility: visible;
+      }
+
+    .todos-list_item:hover .custom-checkbox_visual {
+      border: 1px solid #ccc;
+      }
+
+    .todos-list_item:hover .custom-checkbox_target:checked ~ .custom-checkbox_visual {
+      border: 1px solid #5dc2af;
+      }
+
+    .todos-list_item_text-w {
+      overflow: hidden;
+      }
+
+      .todos-list_item_text {
+        width: 100%;
+        color: #666666;
+        }
+
+        .todos-list_item.__checked .todos-list_item_text {
+          text-decoration: line-through;
+          color: #ccc;
+          }
