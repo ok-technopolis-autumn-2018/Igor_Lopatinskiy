@@ -1,0 +1,64 @@
+.todos-creator {
+    padding: 16px 16px;
+}
+
+.todos-creator:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.todos-creator_check-all {
+    float: left;
+    margin-right: 16px;
+    margin-top: 12px;
+
+    width: 24px;
+    height: 12px;
+    border: none;
+    outline: none;
+    background: url("../../../icons/select-all.png") no-repeat 0 0;
+
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 120dpi),
+(min-resolution: 1.5dppx) {
+    .todo-creator_check-all {
+        background: url(../../../icons/select-all@2x.png) no-repeat 0 0;
+    }
+}
+
+.todos-creator_text-input-w {
+    overflow: hidden;
+}
+
+.todos-creator_text-input {
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%;
+    font-size: 24px;
+    color: #666;
+    font-weight: 300;
+}
+
+.todos-creator_text-input::-webkit-input-placeholder {
+    font-style: italic;
+    color: #ccc;
+}
+
+.todos-creator_text-input:-moz-placeholder {
+    font-style: italic;
+    color: #ccc;
+}
+
+.todos-creator_text-input::-moz-placeholder {
+    font-style: italic;
+    color: #ccc;
+}
+
+.todos-creator_text-input:-ms-input-placeholder {
+    font-style: italic;
+    color: #ccc;
+}

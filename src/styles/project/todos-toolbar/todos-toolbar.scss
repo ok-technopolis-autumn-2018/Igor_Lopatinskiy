@@ -1,0 +1,40 @@
+.todos-toolbar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.todos-toolbar_unready-counter, .todos-toolbar_filters, .todos-toolbar_clear-completed, .filters-item {
+    position: relative;
+    display: inline-block;
+    font-family: "Helvetica Neue",  Arial, sans-serif;
+    font-size: 12px;
+    color: #666;
+    border-radius: 3px;
+    border: 1px solid #fff;
+}
+
+.todos-toolbar_unready-counter {
+    float: left;
+    margin-top: 2px;    /* переделать по-нормальному */
+}
+
+.filters-item {
+    margin-right: 2px;
+}
+
+.filters-item:hover, .todos-toolbar_clear-completed:hover {
+    cursor: pointer;
+}
+
+.filters-item:focus, .todos-toolbar_clear-completed:focus {
+    border: 1px solid rgba(175, 47, 47, 0.15);
+    outline: none;
+}
+
+.todos-toolbar_clear-completed {
+    float: right;
+    margin-top: 1px;    /* переделать по-нормальному */
+}
+

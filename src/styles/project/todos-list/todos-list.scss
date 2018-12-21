@@ -1,0 +1,66 @@
+.todos-list {
+
+}
+
+.todos-list_item {
+    padding: 10px;
+}
+
+.todos-list_item:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.todos-list_item_ready-marker {
+    float: left;
+    margin-right: 10px;
+    margin-top: -3px;
+}
+
+.todos-list_item_text-w {
+    overflow: hidden;
+}
+
+.todos-list_item_text {
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%;
+    height: 26px;
+    font-size: 24px;
+    color: #666;
+    font-weight: 400;
+    font-family: "Helvetica Neue",  Arial, sans-serif;
+}
+
+.todos-list_item_remove {
+    float: right;
+    margin-left: 16px;
+    /*display: none;*/
+    visibility: hidden;
+    margin-top: 9px;
+    width: 18px;
+    height: 18px;
+    border: none;
+    outline: none;
+    background: url(../../../icons/close.png);
+
+}
+
+.todos-list_item:hover .todos-list_item_remove {
+    /*display: block;*/
+    visibility: visible;
+}
+
+.todos-list_linear {
+    border: none;
+    background-color: #ccc;
+    height: 1px;
+}
+
+.todos-list_item:hover {
+    /*display: block;*/
+    background-color: #fafafafa;
+    cursor: pointer;
+}

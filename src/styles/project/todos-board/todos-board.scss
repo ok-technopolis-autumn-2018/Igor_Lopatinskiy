@@ -1,0 +1,43 @@
+.todos-board {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    position: relative;
+    height: 400px;
+}
+
+.todos-board:before,
+.todos-board:after {
+    /*content: '';*/
+    position: absolute;
+    top: 100%;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    z-index: -1;
+}
+
+.todos-board.__has-content:before,
+.todos-board.__has-content:after {
+    content: '';
+}
+
+.todos-board:before {
+    left: 8px;
+    right: 8px;
+    height: 8px;
+}
+
+.todos-board:after {
+    left: 4px;
+    right: 4px;
+    height: 4px;
+}
+
+.todos-board .todos-list,
+.todos-board .todos-toolbar {
+    display: none;
+}
+
+.todos-board.__has-content .todos-list,
+.todos-board.__has-content .todos-toolbar {
+    display: block;
+}
